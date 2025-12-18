@@ -1,0 +1,24 @@
+# Compiled class files
+*.class
+target/
+
+# IDE files
+.idea/
+*.iml
+.vscode/
+.project
+.classpath
+
+# Database
+*.db
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Configuration (sensitive data)
+hibernate.cfg.xml
+application.properties
