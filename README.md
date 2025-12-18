@@ -180,6 +180,6 @@ Reports are generated on the server and returned to the client as byte streams.
 This server is consumed by the Gaming Center Swing Client.
 
 Client Repository:
-https://github.com/<your-username>/gaming-center-client
+[https://github.com/<your-username>/gaming-center-client](https://github.com/SharonMutabonwa/gaming_center_management_rmi_client.git)
 
 
