@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <!-- Database Connection Settings -->
+        <property name="hibernate.connection.driver_class">com.mysql.cj.jdbc.Driver</property>
+        <property name="hibernate.connection.url">jdbc:mysql://localhost:3306/gaming_center_management_system_db?useSSL=false&amp;serverTimezone=UTC&amp;allowPublicKeyRetrieval=true</property>
+        <property name="hibernate.connection.username">root</property>
+        <property name="hibernate.connection.password">1234</property>
+        
+        <!-- JDBC Connection Pool Settings -->
+        <property name="hibernate.connection.pool_size">10</property>
+        
+        <!-- SQL Dialect -->
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+        
+        <!-- Echo SQL to stdout -->
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.format_sql">true</property>
+        
+        <!-- Drop and re-create the database schema on startup -->
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        
+        <!-- Enable Hibernate's automatic session context management -->
+        <property name="hibernate.current_session_context_class">thread</property>
+        
+        <!-- Disable the second-level cache -->
+        <property name="hibernate.cache.use_second_level_cache">false</property>
+        
+        <!-- Mapping Classes -->
+        <mapping class="model.User"/>
+        <mapping class="model.Customer"/>
+        <mapping class="model.MembershipCard"/>
+        <mapping class="model.GamingStation"/>
+        <mapping class="model.Game"/>
+        <mapping class="model.StationGame"/>
+        <mapping class="model.Booking"/>
+        <mapping class="model.Tournament"/>
+        <mapping class="model.TournamentParticipant"/>
+        <mapping class="model.Transaction"/>
+        <mapping class="model.Notification"/>
+    </session-factory>
+</hibernate-configuration>
